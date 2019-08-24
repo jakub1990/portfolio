@@ -1,0 +1,221 @@
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  position: relative;
+ 
+}
+header {
+  background: black;
+  height: 50px;
+  display: flex;
+  line-height: 50px;
+  position: fixed;
+  border-bottom: 2px solid #BD3532;
+  width: 100%;    
+}
+
+#logo {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  background: hsla(182, 58%, 47%, 1);
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 50px;
+  box-shadow: 10px -2px 5px 0px rgba(74,70,33,1);
+}
+
+#logo h5 {
+  margin: 0;
+  text-align: center;
+}
+
+#logo h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  margin: 0 auto;
+  width: 50%;
+  
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+ 
+}
+
+
+ul li {
+  flex: 1;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #32b9bd;
+}
+
+#mobile-bars {
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+.welcome-info {
+  padding-top: 50px;
+  display: flex;
+}
+
+.banner {
+  flex: 1;
+}
+
+.info-text {
+  flex: 2;
+}
+
+.info-text > h1 {
+  font-weight: normal;
+  color: #32b9bd;
+  padding: 20px;
+  text-align: center; 
+}
+
+
+
+.info-text > p {
+  text-align: center;
+  padding: 20px;
+}
+
+
+.info-text > ul {
+  margin-top: 40px;
+  
+}
+
+.info-text ul li  {
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.brd {
+  border-right: 1px solid #BD3532;
+}
+
+
+.info-text ul li i {
+  display: block;
+  padding: 15px;
+ font-size: 2.5em;
+}
+
+.cta-btn {
+  padding: 100px;
+  text-align: center;
+}
+
+button {
+  border-radius: 5%;
+  padding: 10px 20px;
+  background: #32b9bd;
+  font-size: 1.5em;
+  transition: all 0.7s linear;
+}
+
+.rotation {
+  transform: rotate(360deg);
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+
+@media (max-width: 1200px) {
+  nav {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    display: none;  
+  }
+  
+  .mobile {
+    display: block;
+  }
+  
+  nav ul {
+    display: block;
+    background: grey;
+    padding: 0;
+  }
+  
+  nav ul li {
+    width: 100%;
+    border: 1px solid #32b9bd;
+  }
+  
+  #logo {
+    margin-left: 0;
+  }
+  
+  #mobile-bars {
+    box-sizing: border-box;
+    display: block;
+    padding-right: 60px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+  
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .welcome-info {
+  display: block;
+ 
+}
+  
+  .info-text > h1 {
+    text-align: center;
+  }
+   
+  .welcome-info .banner img {
+    display: block;
+    width: 100%;
+  }
+  .brd {
+   border-right: 0;
+  }
+  
+  button {
+    font-size: 0.75em;
+  }
+  .cta-btn {  
+  padding: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+    padding: 0;
+  }
+  .info-text > ul {
+    display: block;
+  }
+}

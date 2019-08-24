@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background: linear-gradient(to left,  #4ABDAC, #FC4A1A);
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  max-width: 600px;
+  margin: 10px auto;
+  background: #DFDCE3;
+  padding: 10px;
+}
+
+#container > h2 {
+  text-align: center;
+  background: #F7B733;
+}
+
+#container > p {
+  padding: 10px;
+}
+
+#container > input {
+  padding: 10px; 
+  margin-left: 10px;
+}
+
+select {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+
+#calculate {
+ background: #fff;
+ font-size: 20px;
+ display: block;
+ margin: 0px auto;
+  
+}
+
+#totaltip {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+#totaltip:before {
+  content: "Tip amount:";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#totaltip > small {
+  display: block;
+  font-weight: bold;
+  font-size: 50px;
+}

@@ -1,0 +1,115 @@
+.robot {
+margin-top: 100px;
+position: relative;
+animation: move 10s infinite;
+animation-direction: alternate;
+}
+
+@keyframes move {
+0% {left: 0px; top: 0px;}
+50% {top: 150px; left: 150px;}
+100% {left: 0px; top: 150px;}
+
+}
+
+ .head {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background: green;
+  position: relative;
+  border-radius: 20%;
+  border: 10px solid grey;
+ }
+ .eye {
+ width: 20px;
+ height: 20px;
+ background: red;
+ border-radius: 50%;
+ animation: light 1s infinite;
+
+ }
+ 
+ @keyframes light {
+ from {background: red;}
+ to {background: yellow;}
+ }
+ 
+ .eyel {
+ position: absolute;
+ top: 20%;
+ left: 10%;
+
+ }
+ 
+ .eyer {
+ position: absolute;
+ top: 20%;
+ right: 10%;
+
+
+ }
+ 
+ 
+ .torso {
+ width: 250px;
+ height: 250px;
+ background: green;
+ margin: auto;
+ border-radius: 30%;
+ position: relative;
+ border: 10px solid grey;
+ }
+ 
+ .mouth {
+ width: 50px;
+ height: 15px;
+ background: red;
+ position: absolute;
+ top: 70%;
+ left: 25%;
+ border: solid 2px white;
+ border-radius: 15%;
+ }
+ 
+ .arml {
+ width: 50px;
+ height: 50px;
+ background: black;
+ position: absolute;
+ top: 35%;
+ left: -15%;
+ border-radius: 50%;
+ }
+ 
+ .armr {
+  width: 50px;
+ height: 50px;
+ background: black;
+ position: absolute;
+ top: 35%;
+ right: -15%;
+ border-radius: 50%;
+ }
+ 
+ .legl {
+   width: 50px;
+ height: 50px;
+ background: black;
+ position: absolute;
+ top: 90%;
+ left: 15%;
+ border-radius: 50%;
+ }
+ 
+ 
+  .legr {
+   width: 50px;
+ height: 50px;
+ background: black;
+ position: absolute;
+ top: 90%;
+ right: 15%;
+ border-radius: 50%;
+ }
+ 

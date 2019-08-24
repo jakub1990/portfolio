@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Img Manipilute!</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head> 
+<body>
+  <h1>Update Variables with <span class="hightlight">JS</span></h1>
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input type="range" name="spacing" min="0" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input type="color" name="base" value="#ffc600">
+
+    <label for="border">Border-Radius</label>
+    <input type="range" min="0" max="50" name="border" value="10" data-sizing="%">
+  </div>
+    <img src="https://images.pexels.com/photos/2531356/pexels-photo-2531356.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="woman photo">
+ 
+ <script>
+   const inputs = document.querySelectorAll(".controls input");
+   function updateInfo() {
+   	const suffix = this.dataset.sizing|| '';
+   	document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+   }
+
+   inputs.forEach(input => input.addEventListener("change", updateInfo));
+ </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+
+#main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: calc(30vh);
+  background: url("https://miro.medium.com/max/1000/1*Eh3ftzvlQzIPk-nhaPedTQ.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.header-overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(57, 0, 77, 0.7);
+}
+
+header > h1 {
+  position: absolute;
+  bottom: 20px;
+  font-weight: 400;
+  color: #fcfcfc;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.plus-sign {
+  font-size: 25px;
+  color: white;
+  background: #ff4d4d;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  left: 87%;
+  top: 25vh;
+}
+
+.main-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.heading {
+  text-transform: uppercase;
+  color: #b8b6b6;
+  padding-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid #eee 1px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  
+}
+
+.icon {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.icon i:first-child {
+  color: rgba(57, 0, 77, 0.7);
+}
+
+.star {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  color: gold;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.txt-icon {
+ display: flex;
+ width: 70%;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+

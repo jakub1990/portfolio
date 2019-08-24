@@ -1,0 +1,44 @@
+body {
+	background: #222930;
+	color: #E9E9E9;
+	font-family: Arial;
+	font-size: 1.2rem;
+}
+
+#container {
+	max-width: 768px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+input[type="text"] {
+	width: 60%;
+	padding: 5px 15px 5px;
+	border-radius: 5px;
+}
+
+
+
+input[type="button"] {
+	background: #4EB1BA;
+	color: #E9E9E9;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 1rem;	
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	margin-top: 10px;
+	font-size: 1.5rem;
+}
+
+.cross {
+	text-decoration: line-through;
+	text-decoration-color: #4EB1BA;
+}
+

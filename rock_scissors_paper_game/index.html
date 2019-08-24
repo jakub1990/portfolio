@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Scissors Paper</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Rock Scissors Paper</h2>
+  </header>
+  <div id="game-status">
+    <p><span class="user-status">Rock</span> beats <span class="computer-status"> Scissors</span></p>
+  </div>
+  <div id="game-frame">
+    <div class="user-board board">
+      <p>User</p>
+    </div>
+    <div class="computer-board board">
+      <p>Computer</p>
+    </div>
+    <div id="result">
+      <span class="user-score">0</span>:<span class="computer-score">0</span>
+    </div>
+  </div>
+  <div id="signs">
+    <div class="sign rock"><i class="fas fa-hand-rock"></i></div>
+    <div class="sign scissors"><i class="fas fa-hand-scissors"></i></div>
+    <div class="sign paper"><i class="fas fa-hand-paper"></i></div>
+  </div>
+  <div id="result-txt">
+    <p class="result-para">Make your move!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

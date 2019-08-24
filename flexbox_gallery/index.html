@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexbox Gallery</title>
+</head>
+<body>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+      html {
+      	box-sizing: border-box;
+      	background: #fff;
+      	font-family: helvetica, sans-serif;
+      	font-size: 24px;
+      	font-weight: 200;
+      }
+      body {
+      	margin: 0;
+      	text-align: center;
+      }
+
+      .panels {
+      	min-height: 100vh;
+      	overflow: hidden;
+        display: flex;
+      }
+
+      .panel {
+      	background: #680F9C;
+      	box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+      	color: black;
+      	transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+      	flex: 1;
+      	display: flex;
+      	flex-direction: column;
+      	justify-content: space-between;
+      	align-items: center;
+
+      }
+
+      .panel1 {
+        background: url("https://www.transat.com/getmedia/8e81d26c-2b54-459a-aa51-ec844b6d9588/Mexico-CancunBeach-1000x600.jpg.aspx?width=1000&height=600&ext=.jpg");
+        background-size: cover;
+      	background-position: center;
+       
+      }
+ 
+      .panel2 {
+      	background: url("https://iknowthepilot-wp.imgix.net/2016/11/Montego-Bay.jpg?w=900");
+      	background-size: cover;
+      	background-position: center;
+       
+      }
+
+      .panel3 {
+      	background: url("https://t-ec.bstatic.com/images/hotel/max1024x768/152/152584729.jpg");
+      	background-size: cover;
+      	background-position: center;
+       
+      }
+
+      .panel4 {
+      	background: url("https://www.italymagazine.com/sites/default/files/styles/960x430/public/roma-6-crop.jpg?itok=dNO4fzl2");
+      	background-size: cover;
+      	background-position: center;
+       
+      }
+      
+      .panel > * {
+      	margin: 0;
+      	width: 100%;
+      	transition: transform 0.5s;
+      }
+
+      .panel > p {
+      	text-transform: uppercase;
+      	font-family: 'Anatic SC', cursive;
+      }
+
+      .panel > *:first-child {
+      	transform: translateY(-100%);
+      }
+
+      .panel.open-active > *:first-child {
+      	transform: translateY(0%);
+      }
+
+      .panel > *:last-child {
+      	transform: translateY(100%);
+      }
+
+      .panel.open-active> *:last-child {
+      	transform: translateY(0%);
+      }
+
+      
+      .panel p:nth-child(2):hover {
+      	font-size: 1.7rem;
+      }
+
+     .panel.open {
+     	flex: 5;
+     }
+	</style>
+  <div class="panels">
+    <div class="panel panel1">
+      <p>Mexico</p>
+      <p>Cancuun</p>
+      <p>Visit!</p>
+    </div>
+    <div class="panel panel2">
+      <p>Jamaica</p>
+      <p>Montego Bay</p>
+      <p>Visit</p>
+    </div>
+    <div class="panel panel3">
+      <p>Cuba</p>
+      <p>Varadero</p>
+      <p>Visit</p>
+    </div>
+    <div class="panel panel4">
+      <p>Italy</p>
+      <p>Rome</p>
+      <p>Visit</p>
+    </div>
+  </div>
+
+ <script>
+  const panels = document.querySelectorAll(".panel");
+  function updatePanel() {
+  	this.classList.toggle("open");
+  
+  }
+
+  function updatePara() {
+  		this.classList.toggle("open-active");
+  }
+   panels.forEach(panel => {
+  	panel.addEventListener("click", updatePanel);
+  	panel.addEventListener("transitionend", updatePara);
+  });
+
+
+ </script>
+</body>
+</html>
