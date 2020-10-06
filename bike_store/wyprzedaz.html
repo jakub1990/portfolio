@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RowerY</title>
+    <link rel="stylesheet" href="style/style-sp.css" type="text/css">
+  </head>
+  <body>
+	<header>
+	  <div class="logo">
+		  <img src="https://freesvg.org/img/clipartjunky218-Cyclist-on-Bike.png" alt="logo">
+	  </div>
+	  <nav>
+	    <div class="container-nav">
+			  <ul class="nav-ul">
+				  <li><a href="index.html">Strona Główna</a></li>
+				  <li><a href="#">Sprzedawane rowery</a></li>
+				  <li><a href="akcesoria.html">Akcesoria</a></li>
+				  <li><a href="wyprzedaz.html">Produkty na wyprzedaż</a></li>
+			  </ul>
+		  </div>
+	  </nav>
+	</header>
+	<main>
+		<aside>
+          <div class="container-aside">
+            <div class="search-price">
+              <label for="price-small">od (PLN)</label>
+              <input type="number" id="price-small" name="price-small" min="500" max="12000" value="500">
+              <label for="price-high">do (PLN)</label>
+              <input type="number" id="price-high" name="price-high" min="500" max="12000" value="2000">
+            </div>
+            <div class="search-bike">
+              <label for="bike">Typ roweru</label>
+              <select id="bike" name="bike">
+                <option value="gorski">Rower Górski</option>
+                <option value="szosowy">Rower Szosowy</option>
+                <option value="trekkingowy">Rower Trekkingowy</option>
+                <option value="crossowy">Rower Crossowy</option>
+                <option value="miejski">Rower Miejski</option>
+                <option value="elektryczny">Rower Elektryczny</option>
+                <option value="bmx">BMX</option>
+                <option value="dzieciecy">Rower Dziecięcy</option>
+              </select>
+              <div class="submit">
+                <input type="submit" value="Filtruj" name="submit">
+              </div>
+            </div>
+          </div>
+		</aside>
+		<article>
+			<div class="sold">
+				<h2>Uwaga! Wyprzedajemy!</h2>
+			</div>
+			<div class="grid">
+				<div class="element">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bicycle_Trailer_for_expeditions_and_bike_vacations.jpg/800px-Bicycle_Trailer_for_expeditions_and_bike_vacations.jpg">
+					<p><span class="crossed">75 PLN</span> 49 PLN</p>
+				</div>
+				<div class="element">
+					<img src="https://cdn.pixabay.com/photo/2013/06/05/18/20/bike-bell-116757_960_720.jpg">
+					<p><span class="crossed">125 PLN</span> 99 PLN</p>
+				</div>
+				<div class="element">
+					<img src="https://pixnio.com/free-images/2019/09/26/2019-09-26-17-25-49-1200x800.jpg">
+					<p><span class="crossed">99 PLN</span> 69 PLN</p>
+				</div>
+			</div>
+		</article>
+	</main>
+	<footer>
+		<p>RowerY 2020, Warszawa, 12-345 ul. Rowerowa 41, tel. 500 500 500</p>
+	</footer>
+  </body>
+</html>
