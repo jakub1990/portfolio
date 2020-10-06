@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>kalkulator</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  </head>
+  <body>
+   <div class="calculator">
+    <div class="result">
+      <input type="text" id="result">
+    </div>
+    <div class="row">
+      <button value="CE">CE</button>
+      <button>=</button>
+    </div>
+    <div class="row">
+      <button value="1">1</button>
+      <button value="2">2</button>
+      <button value="3">3</button>
+    </div>
+    <div class="row">
+      <button value="4">4</button>
+      <button value="5">5</button>
+      <button value="6">6</button>
+    </div>
+    <div class="row">
+      <button value="7">7</button>
+      <button value="8">8</button>
+      <button value="9">9</button>
+    </div>
+    <div class="row">
+      <button value=".">.</button>
+      <button value="0">0</button>
+      <button value="+">+</button>
+    </div>
+    <div class="row">
+       <button value="*">*</button>
+      <button value="/">/</button>
+      <button value="-">-</button>
+    </div>
+</div>
+  <script>
+	let resultField = document.querySelector('#result');
+	const button = document.querySelectorAll('button');
+	let oldNum = '';
+	let theNum = '';
+	let total = 0;
+
+
+	function solve() {
+	  let score = resultField.value;
+	  let y = eval(score);
+	  resultField.value = y;
+	}
+
+	for(let i = 0; i < button.length; i++) {
+	  button[i].addEventListener('click', (e) => {
+	    const key = e.target;
+	    resultField.value += key.value;
+	    if(key.value === 'CE') {
+	      resultField.value = '';
+	    }
+	    if(key.textContent === '=') {
+	      solve();
+	    }
+	  })
+	}
+  </script>
+  </body>
+</html>
