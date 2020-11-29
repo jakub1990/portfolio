@@ -1,0 +1,23 @@
+body {
+  background: #f5ba55;
+  font-family: sans-serif;
+}
+
+h1:after {
+  content: "";
+  width: 3px;
+  height: 35px;
+  background: black;
+  animation: blink 0.5s infinite;
+  position: absolute;
+  top: 20px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

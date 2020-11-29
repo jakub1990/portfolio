@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  background: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section h1 {
+  font-family: helvetica;
+  color: black;
+}
+
+.m {
+  transition: background-color 1s ease;
+}
+
+.active {
+  background-color: white;
+}
