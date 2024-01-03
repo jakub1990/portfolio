@@ -10,10 +10,6 @@ html, body {
 	box-sizing: border-box;
 }
 
-h1 {
-	margin-top: 0;
-}
-
 .keys {
 	height: 100vh;
 	display: flex;

@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1><span class="fire">D</span><span class="burn">R</span><span class="burn">U</span><span class="fire">M</span></span><span class="fire">K</span></span><span class="fire">I</span></span><span class="fire">T</span></h1>
+<span class="fire">D</span><span class="burn">R</span><span class="burn">U</span><span class="fire">M</span></span><span class="fire">K</span></span><span class="fire">I</span></span><span class="fire">T</span></h1>
   <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
